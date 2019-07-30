@@ -1,0 +1,483 @@
+<!--base href="http://www.angelfire.com/mn3/thatguy/" target="main"-->
+<html>
+
+	<head>
+		<Title>Links</Title>
+		<script>
+			<!--
+			function stopError() {
+				return true;
+			}
+
+			window.onerror = stopError;
+			-->
+		</script>
+		<script language="JavaScript1.2">
+			/*
+Add-to-favorites Script
+Created by David Gardner (toolmandav@geocities.com)
+No warranty of any kind comes with this script!
+Permission granted to Dynamic Drive (http://dynamicdrive.com)
+to post and feature this script on their DHTML archive
+*/
+
+			//configure the two variables below to match yoursite's own info
+			var bookmarkurl = "http://tonysplace13.cjb.net"
+			var bookmarktitle = "Tony's Place"
+
+			function addbookmark() {
+				if (document.all)
+					window.external.AddFavorite(bookmarkurl, bookmarktitle)
+			}
+		</script>
+		<style TYPE="text/css">
+			A {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:visited {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:active {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:hover {
+				cursor: url("./inv.cur");
+				color: #ffffff;
+				text-decoration=none;
+			}
+
+			A:link {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			.h {
+				visibility: hidden
+			}
+
+			.link {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				background-color: black
+			}
+		</style>
+		<script language=JavaScript>
+			//Animated Window- By Rizwan Chand (rizwanchand@hotmail.com)
+			//Modified by DD for NS compatibility
+			//Visit http://www.dynamicdrive.com for this script
+
+			function expandingWindow(website) {
+				var windowprops = 'width=100,height=100,resizable=no,status=0,scrollbars=0,menubar=0,directories=0'
+				var heightspeed = 2; // vertical scrolling speed (higher = slower)
+				var widthspeed = 7; // horizontal scrolling speed (higher = slower)
+				var leftdist = 50; // distance to left edge of window
+				var topdist = 50; // distance to top edge of window
+
+				if (window.resizeTo && navigator.userAgent.indexOf("Opera") == -1) {
+					var winwidth = "413";
+					var winheight = "233";
+					var sizer = window.open("", "", "left=" + leftdist + ",top=" + topdist + "," + windowprops);
+					for (sizeheight = 1; sizeheight < winheight; sizeheight += heightspeed)
+						sizer.resizeTo("1", sizeheight);
+					for (sizewidth = 1; sizewidth < winwidth; sizewidth += widthspeed)
+						sizer.resizeTo(sizewidth, sizeheight);
+					sizer.location = website;
+				} else
+					window.open(website, 'mywindow');
+			}
+		</script>
+		<style TYPE="text/css">
+			body {
+				scrollbar-face-color: #7cfc00;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #66ffff;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #990000;
+				scrollbar-track-color: #0033ff;
+				scrollbar-arrow-color: #000000;
+				background-color: black
+			}
+		</style>
+		<script src="./rightmenu.js" type="text/javascript">
+			//Right-click menu- By Eyecon (http://www.webteam.ro) //Slight modifications by JK //Visit JavaScript Kit (http://javascriptkit.com) for script
+		</script>
+		<style>
+			#men {
+				BORDER-RIGHT: 2px outset;
+				BORDER-TOP: 2px outset;
+				Z-INDEX: 1;
+				LEFT: 0px;
+				VISIBILITY: hidden;
+				BORDER-LEFT: 2px outset;
+				BORDER-BOTTOM: 2px outset;
+				POSITION: absolute;
+				TOP: 0px
+			}
+
+			#men A {
+				PADDING-RIGHT: 1px;
+				PADDING-LEFT: 1px;
+				PADDING-BOTTOM: 4px;
+				MARGIN: 1px 1px 1px 16px;
+				FONT: 12px sans-serif;
+				WIDTH: 100%;
+				PADDING-TOP: 3px;
+				HEIGHT: 100%;
+				TEXT-DECORATION: none
+			}
+
+			.ico {
+				BORDER-RIGHT: medium none;
+				BORDER-TOP: medium none;
+				FLOAT: left;
+				BORDER-LEFT: medium none;
+				BORDER-BOTTOM: medium none
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<script language='JavaScript' src="milonic_src.js" type="text/javascript"> </script>
+		<script language='JavaScript'>
+			if (ns4) _d.write("<scr" + "ipt language='JavaScript' src=mmenuns4.js><\/scr" + "ipt>");
+			else _d.write("<scr" + "ipt language='JavaScript' src=mmenudom.js><\/scr" + "ipt>");
+		</script>
+		<script language='JavaScript' src="menu_data.js" type="text/javascript"> </script>
+		<script type="text/javascript">
+			//MENU TITLE eyesys_title="Site Menu" //TITLE BACKGROUND COLORS eyesys_titlecol1="black" eyesys_titlecol2="red" //TITLE COLOR
+			eyesys_titletext = "white" //MENU & ITEM BACKGROUND COLOR eyesys_bg="#b2b564" //ITEM BACKGROUND COLOR ON MOUSE OVER eyesys_bgov="#7cfc00" //MENU COLOR eyesys_cl="black" //MENU COLOR ON MOUSE OVER eyesys_clov="black" //MENU WIDTH
+			eyesys_width = 160 //menu starts here eyesys_init() //menu item sintax: eyesys_item(text,icon,link) //for no icon use 'null' eyesys_item('Tonys Place','/home2.gif','home.html','main') eyesys_item('Learn HTML',null,'html.html') eyesys_item('ThE FuN
+			PaGe ',null,'
+			funpage.html ') eyesys_item('
+			Learn Java Script ',null,'
+			java / ') eyesys_item('
+			Sign My Guest Book ',null,'
+			guest.html ') eyesys_item('
+			View My Guest Book ',null,'
+			http: //htmlgear.lycos.com/guest/control.guest?u=tonybrix&i=1&a=view')
+				eyesys_item('Email Me', null, 'Mailto:c2z232f@yahoo.com?subject=suggestions') //mene closes here eyesys_close()
+		</script>
+		<script language="JavaScript">
+			fCol = 'FFFF00'; //face colour.
+			sCol = 'FF0000'; //seconds colour.
+			mCol = '00FF00'; //minutes colour.
+			hCol = '3399FF'; //hours colour.
+
+			Ybase = 30; //Clock height.
+			Xbase = 30; //Clock width.
+
+
+			H = '...';
+			H = H.split('');
+			M = '....';
+			M = M.split('');
+			S = '.....';
+			S = S.split('');
+			NS4 = (document.layers);
+			NS6 = (document.getElementById && !document.all);
+			IE4 = (document.all);
+			Ypos = 0;
+			Xpos = 0;
+			dots = 12;
+			Split = 360 / dots;
+			if (NS6) {
+				for (i = 1; i < dots + 1; i++) {
+					document.write('<div id="n6Digits' + i + '" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:#' + fCol + ';text-align:center;padding-top:10px">' + i + '</div>');
+				}
+				for (i = 0; i < M.length; i++) {
+					document.write('<div id="Ny' + i + '" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#' + mCol + '"></div>');
+				}
+				for (i = 0; i < H.length; i++) {
+					document.write('<div id="Nz' + i + '" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#' + hCol + '"></div>');
+				}
+				for (i = 0; i < S.length; i++) {
+					document.write('<div id="Nx' + i + '" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#' + sCol + '"></div>');
+				}
+			}
+			if (NS4) {
+				dgts = '1 2 3 4 5 6 7 8 9 10 11 12';
+				dgts = dgts.split(' ')
+				for (i = 0; i < dots; i++) {
+					document.write('<layer name=nsDigits' + i + ' top=0 left=0 height=30 width=30><center><font face=Arial size=1 color=' + fCol + '>' + dgts[i] + '</font></center></layer>');
+				}
+				for (i = 0; i < M.length; i++) {
+					document.write('<layer name=ny' + i + ' top=0 left=0 bgcolor=' + mCol + ' clip="0,0,2,2"></layer>');
+				}
+				for (i = 0; i < H.length; i++) {
+					document.write('<layer name=nz' + i + ' top=0 left=0 bgcolor=' + hCol + ' clip="0,0,2,2"></layer>');
+				}
+				for (i = 0; i < S.length; i++) {
+					document.write('<layer name=nx' + i + ' top=0 left=0 bgcolor=' + sCol + ' clip="0,0,2,2"></layer>');
+				}
+			}
+			if (IE4) {
+				document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+				for (i = 1; i < dots + 1; i++) {
+					document.write('<div id="ieDigits" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:' + fCol + ';text-align:center;padding-top:10px">' + i + '</div>');
+				}
+				document.write('</div></div>')
+				document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+				for (i = 0; i < M.length; i++) {
+					document.write('<div id=y style="position:absolute;width:2px;height:2px;font-size:2px;background:' + mCol + '"></div>');
+				}
+				document.write('</div></div>')
+				document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+				for (i = 0; i < H.length; i++) {
+					document.write('<div id=z style="position:absolute;width:2px;height:2px;font-size:2px;background:' + hCol + '"></div>');
+				}
+				document.write('</div></div>')
+				document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+				for (i = 0; i < S.length; i++) {
+					document.write('<div id=x style="position:absolute;width:2px;height:2px;font-size:2px;background:' + sCol + '"></div>');
+				}
+				document.write('</div></div>')
+			}
+
+
+
+			function clock() {
+				time = new Date();
+				secs = time.getSeconds();
+				sec = -1.57 + Math.PI * secs / 30;
+				mins = time.getMinutes();
+				min = -1.57 + Math.PI * mins / 30;
+				hr = time.getHours();
+				hrs = -1.57 + Math.PI * hr / 6 + Math.PI * parseInt(time.getMinutes()) / 360;
+
+				if (NS6) {
+					Ypos = window.pageYOffset + window.innerHeight - Ybase - 25;
+					Xpos = window.pageXOffset + window.innerWidth - Xbase - 30;
+					for (i = 1; i < dots + 1; i++) {
+						document.getElementById("n6Digits" + i).style.top = Ypos - 15 + Ybase * Math.sin(-1.56 + i * Split * Math.PI / 180)
+						document.getElementById("n6Digits" + i).style.left = Xpos - 15 + Xbase * Math.cos(-1.56 + i * Split * Math.PI / 180)
+					}
+					for (i = 0; i < S.length; i++) {
+						document.getElementById("Nx" + i).style.top = Ypos + i * Ybase / 4.1 * Math.sin(sec);
+						document.getElementById("Nx" + i).style.left = Xpos + i * Xbase / 4.1 * Math.cos(sec);
+					}
+					for (i = 0; i < M.length; i++) {
+						document.getElementById("Ny" + i).style.top = Ypos + i * Ybase / 4.1 * Math.sin(min);
+						document.getElementById("Ny" + i).style.left = Xpos + i * Xbase / 4.1 * Math.cos(min);
+					}
+					for (i = 0; i < H.length; i++) {
+						document.getElementById("Nz" + i).style.top = Ypos + i * Ybase / 4.1 * Math.sin(hrs);
+						document.getElementById("Nz" + i).style.left = Xpos + i * Xbase / 4.1 * Math.cos(hrs);
+					}
+				}
+				if (NS4) {
+					Ypos = window.pageYOffset + window.innerHeight - Ybase - 20;
+					Xpos = window.pageXOffset + window.innerWidth - Xbase - 30;
+					for (i = 0; i < dots; ++i) {
+						document.layers["nsDigits" + i].top = Ypos - 5 + Ybase * Math.sin(-1.045 + i * Split * Math.PI / 180)
+						document.layers["nsDigits" + i].left = Xpos - 15 + Xbase * Math.cos(-1.045 + i * Split * Math.PI / 180)
+					}
+					for (i = 0; i < S.length; i++) {
+						document.layers["nx" + i].top = Ypos + i * Ybase / 4.1 * Math.sin(sec);
+						document.layers["nx" + i].left = Xpos + i * Xbase / 4.1 * Math.cos(sec);
+					}
+					for (i = 0; i < M.length; i++) {
+						document.layers["ny" + i].top = Ypos + i * Ybase / 4.1 * Math.sin(min);
+						document.layers["ny" + i].left = Xpos + i * Xbase / 4.1 * Math.cos(min);
+					}
+					for (i = 0; i < H.length; i++) {
+						document.layers["nz" + i].top = Ypos + i * Ybase / 4.1 * Math.sin(hrs);
+						document.layers["nz" + i].left = Xpos + i * Xbase / 4.1 * Math.cos(hrs);
+					}
+				}
+
+				if (IE4) {
+					Ypos = document.body.scrollTop + window.document.body.clientHeight - Ybase - 20;
+					Xpos = document.body.scrollLeft + window.document.body.clientWidth - Xbase - 20;
+					for (i = 0; i < dots; ++i) {
+						ieDigits[i].style.pixelTop = Ypos - 15 + Ybase * Math.sin(-1.045 + i * Split * Math.PI / 180)
+						ieDigits[i].style.pixelLeft = Xpos - 15 + Xbase * Math.cos(-1.045 + i * Split * Math.PI / 180)
+					}
+					for (i = 0; i < S.length; i++) {
+						x[i].style.pixelTop = Ypos + i * Ybase / 4.1 * Math.sin(sec);
+						x[i].style.pixelLeft = Xpos + i * Xbase / 4.1 * Math.cos(sec);
+					}
+					for (i = 0; i < M.length; i++) {
+						y[i].style.pixelTop = Ypos + i * Ybase / 4.1 * Math.sin(min);
+						y[i].style.pixelLeft = Xpos + i * Xbase / 4.1 * Math.cos(min);
+					}
+					for (i = 0; i < H.length; i++) {
+						z[i].style.pixelTop = Ypos + i * Ybase / 4.1 * Math.sin(hrs);
+						z[i].style.pixelLeft = Xpos + i * Xbase / 4.1 * Math.cos(hrs);
+					}
+				}
+				setTimeout('clock()', 100);
+			}
+			clock();
+			//-->
+		</script>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="150" style="position:absolute; top:10; left:20">
+			<font size="-1pt">
+				<tr>
+					<td colspan="2">
+						<font color="red"><u><i><B>SITES</b></i></u></font>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./home.html" onMouseOver=" window.status='Home'; return true" onMouseOut="window.status='';return true" onfocus="cursor=url('/inva.cur')" alt="Home" Target="main">
+							<font face="verdana" size="-1"><small>Home</small></font>
+						</a>
+					</td>
+				</tr>
+				<!--tr>
+<td width="16">&nbsp;</td>
+<td><br /><a href="aboutme.html" onMouseOver=" window.status='About Me'; return true" onMouseOut="window.status='';return true" onclick="window.status='About Me';return true" alt="About Me" Target="main"><font face="verdana" size="-1"><small>About Me</small></font></a></td>
+</tr-->
+
+				<tr>
+					<td width="16" align="center" valign="middle">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./html.html" onMouseOver=" window.status='HTML Cheat Sheet'; return true" onMouseOut="window.status='';return true" onclick="window.status='HTML Cheat Sheet';return true" alt="Learn HTML" Target="main">
+							<font face="verdana" size="-1"><small>HTML Cheat Sheet</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16" align="center" valign="middle">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./css.html" onMouseOver=" window.status='CSS Cheat Sheet'; return true" onMouseOut="window.status='';return true" onclick="window.status='CSS Cheat Sheet';return true" alt="Learn HTML" Target="main">
+							<font face="verdana" size="-1"><small>CSS Cheat Sheet</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./funpage.html" onMouseOver=" window.status='ThE FuN PaGe'; return true" onMouseOut="window.status='';return true" onclick="window.status='ThE FuN PaGe';return true" alt="ThE FuN PaGe" Target="main">
+							<font face="verdana" size="-1"><small>ThE FuN PaGe</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16" align="center" valign="middle">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./java/index.html" onMouseOver=" window.status='Learn Javascript'; return true" onMouseOut="window.status='';return true" onclick="window.status='Learn Javascript';return true" alt="Learn Javascript" Target="main">
+							<font face="verdana" size="-1"><small>Learn Javascript</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="#" onclick="expandingWindow('./comments.html');return false" onMouseOver="window.status='Instant Message'; return true" onMouseOut="window.status='';return true"
+						 onclick="window.status='Instant Message';return true" alt="Instant Message">
+							<font face="verdana" size="-1"><small>Instant Message</small></font>
+						</a>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./guest.html" onMouseOver=" window.status='Sign My Guestbook'; return true" onMouseOut="window.status='';return true" onclick="window.status='Sign My Guestbook';return true" alt="Sign My Guestbook" Target="main">
+							<font face="verdana" size="-1"><small>Sign My Guestbook</small></font>
+						</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./Maphack.zip" onMouseOver=" window.status='Maphack'; return true" onMouseOut="window.status='';return true" onclick="window.status='Maphack';return true" alt="Maphack" Target="main">
+							<font face="verdana" size="-1"><small>Maphack DL</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="./RvB_switch.mov" onMouseOver=" window.status='RvB'; return true" onMouseOut="window.status='';return true" onclick="window.status='RvB';return true" alt="RvB" Target="main">
+							<font face="verdana" size="-1"><small>RvB Mac Gamer</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="http://htmlgear.lycos.com/guest/control.guest?u=tonybrix&i=1&a=view" onMouseOver=" window.status='View My Guestbook'; return true" onMouseOut="window.status='';return true"
+						 onclick="window.status='View My Guestbook';return true" alt="View My Guestbook" Target="main">
+							<font face="verdana" size="-1"><small>View My Guestbook</small></font>
+						</a>
+						<br />
+						<br />
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<a href="http://www.freewebs.com/trivia06" onMouseOver=" window.status='Trivia 2006'; return true" onMouseOut="window.status='';return true" onclick="window.status='trivia 2006';return true" alt="Trivia '06" Target="parent">
+							<font face="verdana" size="-1"><small>Trivia Weekend '06</small></font>
+						</a>
+						<br />
+						<br />
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<a href="Mailto:zero1000101@gmail.com?subject=suggestions" onMouseOver=" window.status='Zero1000101@Gmail.com'; return true" onMouseOut="window.status='';return true" onclick="window.status='Zero1000101@Gmail.com';return true"
+						 alt="Zero1000101@Gmail.com" Target="main">
+							<font face="verdana" size="-1"><small>Email Me</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td width="16">&nbsp;</td>
+					<td width="100">
+						<br />
+						<a href="#" onMouseOver=" window.status='Bookmark us'; return true" onMouseOut="window.status='';return true" onclick="addbookmark();return false" alt="'Bookmark us">
+							<font face="verdana" size="-1"><small>Bookmark us</small></font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="left_menu_spacer" height="1"></td>
+				</tr>
+				<tr height="348px">
+					<td></td>
+				</tr>
+				<Tr>
+					<td width="16">&nbsp;</td>
+					<td>
+						<br />
+						<br />
+						<!--img src="http://www.angelfire.com/cgi-bin/Count.cgi?B" width=55 heigth=18 onMouseOver=" window.status='This Many People Have Visited My Site'; return true" onMouseOut="window.status='';return true"
+						 alt="This Many People Have Visited My Site" class="h" /-->
+					</td>
+				</tr>
+			</font>
+		</table>
+
+	</body>
+
+</html>

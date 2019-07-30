@@ -1,0 +1,521 @@
+<html>
+
+	<head>
+		<title>TP</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="description" content="Tony's Place, Where you can Learn HTML and JAVAscript for free">
+		<meta name="keywords" content="Tony,Tony's Place,HTML,Javascript,learn,learn Javascript,Learn HTML">
+		<meta name="author" content="Tony Brix">
+
+		<script language="JavaScript">
+			<!--
+
+			function stopError() {
+				return true;
+			}
+
+			window.onerror = stopError;
+
+			//-->
+		</script>
+		<STYLE TYPE="text/css">
+			< !-- .h {
+				visibility: hidden
+			}
+
+			.guestbook {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:visited {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:link {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:hover {
+				color: #3333ff;
+				text-decoration: none
+			}
+
+			.guestbook:active {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:link {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:active {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:visited {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:hover {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.button {
+				font-family: helvetica;
+				font-size: 13px;
+				background: #7cfc00;
+				border-color: #7cfc00
+			}
+
+			.textinput {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			.select {
+				font-family: verdana;
+				text-decoration=overline;
+				font-size: 13px;
+				background-color: #7cfc00;
+				border-color: #000000;
+				color: #0033ff;
+				font-weight: bold
+			}
+
+			.opt {
+				font-family: verdana;
+				text-decoration="underline";
+				text-color="1033ff";
+			}
+
+			option {
+				font-family: verdana;
+				text-decoration="underline";
+				text-color="1033ff";
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				scrollbar-face-color: #7cfc00;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #66ffff;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #990000;
+				scrollbar-track-color: #0033ff;
+				scrollbar-arrow-color: #000000;
+				width: 100%;
+				overflow-x: hidden
+			}
+
+			input {
+				font-family: verdana;
+				font-size: 13px
+			}
+
+			textarea {
+				font-size: 13px;
+				font-family: verdana, arial, helvetica;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			-->
+		</STYLE>
+
+		<script language="JavaScript">
+			<!--
+
+			function stopError() {
+				return true;
+			}
+
+			window.onerror = stopError;
+
+			//-->
+		</script>
+
+
+		<style TYPE="text/css">
+			< !-- hide from CSS-challenged browsers A: {
+				color: #7cfc00;
+				text-decoration=none;
+				font-face=verdana
+			}
+
+			A:active {
+				color: #7cfc00;
+				text-decoration=none;
+				font-face=verdana
+			}
+
+			A:hover {
+				color: #7cfc00;
+				text-decoration=none;
+				font-face=verdana
+			}
+
+			A:link {
+				color: #7cfc00;
+				text-decoration=none;
+				font-face=verdana
+			}
+
+			A:visited {
+				color: #7cfc00;
+				text-decoration=none;
+				font-face=verdana
+			}
+
+			// done hiding -->
+		</style>
+		<script src="./rightmenu.js" type=text/javascript> //Right-click menu- By Eyecon (http://www.webteam.ro) //Slight modifications by JK //Visit JavaScript Kit (http://javascriptkit.com) for script </script> <style>
+			<!--
+#men {
+BORDER-RIGHT: 2px outset; BORDER-TOP: 2px outset; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: 2px outset; BORDER-BOTTOM: 2px outset; POSITION: absolute; TOP: 0px
+}
+#men A {
+PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 4px; MARGIN: 1px 1px 1px 16px; FONT: 12px sans-serif; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 100%; TEXT-DECORATION: none
+}
+.ico {
+BORDER-RIGHT: medium none; BORDER-TOP: medium none; FLOAT: left; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+//-->
+</style>
+<script language="javascript" FOR="hb" EVENT="OnDownLoad">
+     onDL();
+</script>
+
+		<script language="javascript">
+			DefaultSkin = "http://www.angelfire.com/mn3/thatguy/skin.xip"
+			NextUrl = "./tony.html"
+			ToolbarID = "MyToolbarID"
+		</script>
+
+		<style>
+			.spanstyle {
+				position: absolute;
+				visibility: visible;
+				top: -50px;
+				font-size: 10pt;
+				font-family: Verdana;
+				font-weight: bold;
+				color: black;
+			}
+		</style>
+		<script>
+			/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+			var x, y
+			var step = 20
+			var flag = 0
+
+			// Your snappy message. Important: the space at the end of the sentence!!!
+			var message = "Christine is hot!!! "
+			message = message.split("")
+
+			var xpos = new Array()
+			for (i = 0; i <= message.length - 1; i++) {
+				xpos[i] = -50
+			}
+
+			var ypos = new Array()
+			for (i = 0; i <= message.length - 1; i++) {
+				ypos[i] = -50
+			}
+
+			function handlerMM(e) {
+				x = (document.layers) ? e.pageX : document.body.scrollLeft + event.clientX
+				y = (document.layers) ? e.pageY : document.body.scrollTop + event.clientY
+				flag = 1
+			}
+
+			function makesnake() {
+				if (flag == 1 && document.all) {
+					for (i = message.length - 1; i >= 1; i--) {
+						xpos[i] = xpos[i - 1] + step
+						ypos[i] = ypos[i - 1]
+					}
+					xpos[0] = x + step
+					ypos[0] = y
+
+					for (i = 0; i < message.length - 1; i++) {
+						var thisspan = eval("span" + (i) + ".style")
+						thisspan.posLeft = xpos[i]
+						thisspan.posTop = ypos[i]
+					}
+				} else if (flag == 1 && document.layers) {
+					for (i = message.length - 1; i >= 1; i--) {
+						xpos[i] = xpos[i - 1] + step
+						ypos[i] = ypos[i - 1]
+					}
+					xpos[0] = x + step
+					ypos[0] = y
+
+					for (i = 0; i < message.length - 1; i++) {
+						var thisspan = eval("document.span" + i)
+						thisspan.left = xpos[i]
+						thisspan.top = ypos[i]
+					}
+				}
+				var timer = setTimeout("makesnake()", 30)
+			}
+		</script>
+
+
+
+	</head>
+
+
+
+
+
+
+
+
+
+
+	<body bgcolor="#0000000" text="#ff0000" link="#7cfc00" alink="#ff00ff" vlink="#7cfc00">
+		<div class=h>
+
+
+			<script>
+				// <!-- Beginning of JavaScript -
+				message = "Tonys Place"
+				for (i = 0; i <= message.length - 1; i++) {
+					document.write("<span id='span" + i + "' class='spanstyle'>")
+					document.write(message[i])
+					document.write("</span>")
+				}
+
+				if (document.layers) {
+					document.captureEvents(Event.MOUSEMOVE);
+				}
+				document.onmousemove = handlerMM;
+
+				// - End of JavaScript - -->
+			</script>
+		</div>
+		<script type=text/javascript> //MENU TITLE eyesys_title="Site Menu" //TITLE BACKGROUND COLORS eyesys_titlecol1="black" eyesys_titlecol2="red" //TITLE COLOR eyesys_titletext="white" //MENU & ITEM BACKGROUND COLOR eyesys_bg="#b2b564" //ITEM
+			BACKGROUND COLOR ON MOUSE OVER eyesys_bgov="#7cfc00" //MENU COLOR eyesys_cl="black" //MENU COLOR ON MOUSE OVER eyesys_clov="black" //MENU WIDTH eyesys_width=160 //menu starts here eyesys_init() //menu item sintax: eyesys_item(text,icon,link) //for
+			no icon use 'null' eyesys_item('Tony\'s Place','/home2.gif','home.html') eyesys_item('Learn HTML',null,'html.html') eyesys_item('ThE FuN PaGe',null,'funpage.html') eyesys_item('Learn Java Script',null,'java/') eyesys_item('Sign My Guest
+			Book',null,'guest.html') eyesys_item('View My Guest Book',null,'http://htmlgear.lycos.com/guest/control.guest?u=tonybrix&i=1&a=view') eyesys_item('Email Me',null,'Mailto:c2z232f@yahoo.com?subject=suggestions') //mene closes here eyesys_close()
+			</script> <center><font size="7" color="red" face="Verdana">
+<MARQUEE STYLE="cursor=url('/cur.cur')" DIRECTION=left style="position:absolute; top:60; left:0;">Tony's Place</MARQUEE></font>
+<b><font coler=red>If you have any suggestions on what I should put</font><br>
+<font coler=red>on this site Email me at:</font></b>
+<a href="mailto:c2z232f@yahoo.com?subject=suggestions" OnMouseOut="window.status=''; return true"  OnMouseOver="window.status='c2z232f@yahoo.com'; return true" OnClick="window.status='c2z232f@yahoo.com'; return true">c2z232f@yahoo.com</a><br>
+
+<!-- window.open(this.options[this.selectedIndex].value,'','resizable=no,status=0,scrollbars=0,menubar=0,directories=0,width=300,height=300') -->
+<FORM>
+<SELECT class="select" NAME="list" onchange="alert(this.options[this.selectedIndex].value)">
+<option class="opt" value="Rate My Web Page" selected>Rate My Web Page
+<option class="opt" value="10, Thanks">10, It's Awsome
+<option class="opt" value="9, Thanks">9
+<option class="opt" value="8, Thanks">8
+<option class="opt" value="7, I'm Still Working On It">7
+<option class="opt" value="6, I'm Still Working On It">6
+<option class="opt" value="5, I'm Still Working On It">5, It's OK
+<option class="opt" value="4, I'm Still Working On It" name="thanks">4
+<option class="opt" value="3, You Couldn't Do Much Better">3
+<option class="opt" value="2, You Couldn't Do Much Better">2
+<option class="opt" value="1, You Couldn't Do Much Better">1
+<option class="opt" value="0, You Couldn't Do Much Better">0, It Really Sucks
+</select>
+<noscript>
+<input class="button" type="Submit" value="Go"
+         onsubmit="alert(document.forms[0].url.options[document.forms[0].url.selectedIndex].value);return false,'','resizable=no,status=0,scrollbars=0,menubar=0,directories=0,width=300,height=300'">
+</noscript>
+</form>
+
+<!--APPLET CODE="DropDownMenu.class"
+    ARCHIVE="DropDownMenu.jar"
+    WIDTH="130"
+    HEIGHT="25">
+<PARAM NAME="menubgcolor" VALUE="000000">
+<PARAM NAME="textcolor" VALUE="7cfc00">
+<PARAM NAME="appletbgcolor" VALUE="000000">
+<PARAM NAME="audio" VALUE="drip.au">
+<PARAM NAME="textfile" VALUE="text.txt">
+<PARAM NAME="fontface" VALUE="verdana">
+<PARAM NAME="fontstyle" VALUE="Bold">
+<PARAM NAME="fontbold" VALUE="on">
+<PARAM NAME="fontsize" VALUE="12">
+<PARAM NAME="reset" VALUE="on">
+</APPLET-->
+<script>
+
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+		<br>
+		<hr width=40% size=5>
+		<div align="center">
+			<font face="verdana" size="3"><b>
+					<span id="clock">
+
+						<script language="JavaScript">
+							<!-- This script and many more are available free online at -->
+							<!-- The JavaScript Source!! http://javascript.internet.com -->
+							<!-- Original:  Chris (javascript@crashedstar.com) -->
+							<!-- Web Site:  http://www.crashedstar.com/ -->
+
+							<!-- Begin
+							var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+							var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+							function getthedate() {
+								var mydate = new Date()
+								var year = mydate.getYear()
+								if (year < 1000)
+									year += 1900
+								var day = mydate.getDay()
+								var month = mydate.getMonth()
+								var daym = mydate.getDate()
+								if (daym < 10)
+									daym = "0" + daym
+								var hours = mydate.getHours()
+								var minutes = mydate.getMinutes()
+								var seconds = mydate.getSeconds()
+								var dn = "AM"
+								if (hours >= 12)
+									dn = "PM"
+								if (hours > 12) {
+									hours = hours - 12
+								} {
+									d = new Date();
+									Time24H = new Date();
+									Time24H.setTime(d.getTime() + (d.getTimezoneOffset() * 60000) + 3600000);
+									InternetTime = Math.round((Time24H.getHours() * 60 + Time24H.getMinutes()) / 1.44);
+									if (InternetTime < 10) InternetTime = '00' + InternetTime;
+									else if (InternetTime < 100) InternetTime = '0' + InternetTime;
+								}
+								if (hours == 0)
+									hours = 12
+								if (minutes <= 9)
+									minutes = "0" + minutes
+								if (seconds <= 9)
+									seconds = "0" + seconds
+								//change font size here
+								var cdate = dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + "<br><br>" + hours + ":" + minutes + ":" + seconds + " " + dn + ""
+								if (document.all)
+									document.all.clock.innerHTML = cdate
+								else if (document.getElementById)
+									document.getElementById("clock").innerHTML = cdate
+								else
+									document.write(cdate)
+							}
+							if (!document.all && !document.getElementById)
+								getthedate()
+
+							function goforit() {
+								if (document.all || document.getElementById)
+									setInterval("getthedate()", 1000)
+							}
+							window.onload = goforit
+							//  End -->
+						</script>
+
+					</span>
+				</b>
+			</font>
+		</div>
+		<br>
+
+
+
+		<script language="JavaScript">
+			<!-- This script and many more are available free online at -->
+			<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+			<!-- Begin
+			document.write('<marquee id="iescroller" direction="up" width="21%" height="70" scrollamount="2" scrolldelay="33" style="border:0 solid red;background:http://avault.com/images/bg_grid.gif">');
+			iescroller.onmouseover = new Function("iescroller.scrollAmount=1");
+			iescroller.onmouseout = new Function("iescroller.scrollAmount=2");
+			iescroller.onmousedown = new Function("iescroller.scrollAmount=0");
+			iescroller.onmouseup = new Function("iescroller.scrollAmount=1");
+
+			document.write('<font size="5" face="verdana" color="Yellow">')
+			document.write('<Div align="center">Lessons are not given, they are taken.</div><br><br>');
+			document.write('<Div align="center">Quality means doing it right the first time.</div><br><br>');
+			document.write('<Div align="center">People don\'t plan to fail, they just fail to plan.</div><br><br>');
+			document.write('<Div align="center">If you can dream it, you can do it.</div><br><br>');
+			document.write('</font>');
+			document.write('</marquee>');
+			//  End -->
+		</script><br>
+		<noscript>
+			<a href="./">Angelfire.com</a>
+		</noscript>
+		<font size="1" face="verdana" color="#ffffff" style="position:absolute; bottom:0; left:0;">Tony's Place &copy; 2001-2005 Tony Brix</font>
+		<font size="1" face="verdana" color="#ffffff" style="position:absolute; bottom:0; right:0;">All rights reserved. All wrongs denied.</font>
+
+		<!--script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="alert('If you need to see HTML e-mail me.')";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// -->
+		<!-- /script -->
+	</body>
+
+</html>

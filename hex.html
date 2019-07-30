@@ -1,0 +1,366 @@
+<html>
+
+	<head>
+		<title>Color Palette</title>
+
+		<script language="JavaScript">
+			<!--
+			function ClipBoard(hex) {
+				hex.execCommand("Copy");
+			}
+			// -->
+		</SCRIPT>
+
+
+
+		<script language="JavaScript">
+			function UpdateTextField(hex) {
+				document.pForm.DisplayArea.value = hex;
+				if (document.layers) {
+					document.layers["wheel"].bgColor = hex;
+				} else {
+					document.all["wheel"].style.backgroundColor = hex;
+				}
+			}
+		</script>
+		<style language="text/css">
+			.b {
+				Position: absolute;
+				top: 177;
+				left: 273
+			}
+
+			.a {
+				Position: absolute;
+				top: 219;
+				left: 58;
+				z-index: 1
+			}
+
+			.s {
+				Position: absolute;
+				top: 219;
+				left: 59;
+				z-index: 1
+			}
+
+			.d {
+				Position: absolute;
+				top: 220;
+				left: 59;
+				z-index: 1
+			}
+
+			.f {
+				Position: absolute;
+				top: 221;
+				left: 59;
+				z-index: 1
+			}
+
+			.g {
+				Position: absolute;
+				top: 221;
+				left: 58;
+				z-index: 1
+			}
+
+			.h {
+				Position: absolute;
+				top: 221;
+				left: 57;
+				z-index: 1
+			}
+
+			.j {
+				Position: absolute;
+				top: 220;
+				left: 57;
+				z-index: 1
+			}
+
+			.k {
+				Position: absolute;
+				top: 219;
+				left: 57;
+				z-index: 1
+			}
+
+			.l {
+				Position: absolute;
+				top: 220;
+				left: 58;
+				z-index: 2
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				background-color: #ffffff
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id=wheel style="visibility:visible; position:absolute; top:0px; left:0px;">
+			<font color="#ffffff" class="a">HEX CODE=</font>
+			<font color="#ffffff" class="s">HEX CODE=</font>
+			<font color="#ffffff" class="d">HEX CODE=</font>
+			<font color="#ffffff" class="f">HEX CODE=</font>
+			<font color="#ffffff" class="g">HEX CODE=</font>
+			<font color="#ffffff" class="h">HEX CODE=</font>
+			<font color="#ffffff" class="j">HEX CODE=</font>
+			<font color="#ffffff" class="k">HEX CODE=</font>
+
+			<center>
+				<img src="./images/color.gif" usemap="#palette" border="0" ISMAP width="289" height="193">
+				<img src="./images/black.gif" class="b" usemap="#black" border="0" width="15" height="15">
+				<Form name="pForm">
+					<font color="#000000" class="l">HEX CODE=</font>
+					<font color="#ffffff">HEX CODE=</font>
+					<input type="text" name="DisplayArea" size="9">
+				</form>
+			</center>
+
+			<form>
+				<div align="center">
+					<input type="button" value="CLOSE" onclick="self.close();" align="center">
+				</div><br><br>
+			</form>
+			<map name="palette">
+				<area shape="rect" coords="0,0,15,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFFFF')">
+				<area shape="rect" coords="16,0,31,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFFCC')">
+				<area shape="rect" coords="32,0,47,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFF99')">
+				<area shape="rect" coords="48,0,63,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFF66')">
+				<area shape="rect" coords="64,0,79,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFF33')">
+				<area shape="rect" coords="80,0,95,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFFF00')">
+				<area shape="rect" coords="96,0,111,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCCFF')">
+				<area shape="rect" coords="112,0,127,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCCCC')">
+				<area shape="rect" coords="128,0,143,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCC99')">
+				<area shape="rect" coords="144,0,159,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCC66')">
+				<area shape="rect" coords="160,0,175,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCC33')">
+				<area shape="rect" coords="176,0,191,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FFCC00')">
+				<area shape="rect" coords="192,0,207,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF99FF')">
+				<area shape="rect" coords="208,0,223,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF99CC')">
+				<area shape="rect" coords="224,0,239,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF9999')">
+				<area shape="rect" coords="240,0,255,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF9966')">
+				<area shape="rect" coords="256,0,271,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF9933')">
+				<area shape="rect" coords="272,0,288,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF9900')">
+
+				<area shape="rect" coords="0,96,15,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF66FF')">
+				<area shape="rect" coords="16,96,31,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF66CC')">
+				<area shape="rect" coords="32,96,47,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF6699')">
+				<area shape="rect" coords="48,96,63,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF6666')">
+				<area shape="rect" coords="64,96,79,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF6633')">
+				<area shape="rect" coords="80,96,95,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF6600')">
+				<area shape="rect" coords="96,96,111,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF33FF')">
+				<area shape="rect" coords="112,96,127,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF33CC')">
+				<area shape="rect" coords="128,96,143,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF3399')">
+				<area shape="rect" coords="144,96,159,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF3366')">
+				<area shape="rect" coords="160,96,175,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF3333')">
+				<area shape="rect" coords="176,96,191,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF3300')">
+				<area shape="rect" coords="192,96,207,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF00FF')">
+				<area shape="rect" coords="208,96,223,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF00CC')">
+				<area shape="rect" coords="224,96,239,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF0099')">
+				<area shape="rect" coords="240,96,255,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF0066')">
+				<area shape="rect" coords="256,96,271,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF0033')">
+				<area shape="rect" coords="272,96,288,111" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#FF0000')">
+
+				<area shape="rect" coords="0,16,15,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFFFF')">
+				<area shape="rect" coords="16,16,31,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFFCC')">
+				<area shape="rect" coords="32,16,47,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFF99')">
+				<area shape="rect" coords="48,16,63,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFF66')">
+				<area shape="rect" coords="64,16,79,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFF33')">
+				<area shape="rect" coords="80,16,95,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCFF00')">
+				<area shape="rect" coords="96,16,111,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCCFF')">
+				<area shape="rect" coords="112,16,127,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCCCC')">
+				<area shape="rect" coords="128,16,143,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCC99')">
+				<area shape="rect" coords="144,16,159,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCC66')">
+				<area shape="rect" coords="160,16,175,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCC33')">
+				<area shape="rect" coords="176,16,191,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CCCC00')">
+				<area shape="rect" coords="192,16,207,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC99FF')">
+				<area shape="rect" coords="208,16,223,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC99CC')">
+				<area shape="rect" coords="224,16,239,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC9999')">
+				<area shape="rect" coords="240,16,255,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC9966')">
+				<area shape="rect" coords="256,16,271,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC9933')">
+				<area shape="rect" coords="272,16,288,31" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC9900')">
+
+				<area shape="rect" coords="0,112,15,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC66FF')">
+				<area shape="rect" coords="16,112,31,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC66CC')">
+				<area shape="rect" coords="32,112,47,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC6699')">
+				<area shape="rect" coords="48,112,63,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC6666')">
+				<area shape="rect" coords="64,112,79,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC6633')">
+				<area shape="rect" coords="80,112,95,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC6600')">
+				<area shape="rect" coords="96,112,111,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC33FF')">
+				<area shape="rect" coords="112,112,127,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC33CC')">
+				<area shape="rect" coords="128,112,143,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC3399')">
+				<area shape="rect" coords="144,112,159,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC3366')">
+				<area shape="rect" coords="160,112,175,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC3333')">
+				<area shape="rect" coords="176,112,191,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC3300')">
+				<area shape="rect" coords="192,112,207,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC00FF')">
+				<area shape="rect" coords="208,112,223,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC00CC')">
+				<area shape="rect" coords="224,112,239,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC0099')">
+				<area shape="rect" coords="240,112,255,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC0066')">
+				<area shape="rect" coords="256,112,271,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC0033')">
+				<area shape="rect" coords="272,112,288,127" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#CC0000')">
+
+				<area shape="rect" coords="0,32,15,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FFFF')">
+				<area shape="rect" coords="16,32,31,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FFCC')">
+				<area shape="rect" coords="32,32,47,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FF99')">
+				<area shape="rect" coords="48,32,63,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FF66')">
+				<area shape="rect" coords="64,32,79,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FF33')">
+				<area shape="rect" coords="80,32,95,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99FF00')">
+				<area shape="rect" coords="96,32,111,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CCFF')">
+				<area shape="rect" coords="112,32,127,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CCCC')">
+				<area shape="rect" coords="128,32,143,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CC99')">
+				<area shape="rect" coords="144,32,159,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CC66')">
+				<area shape="rect" coords="160,32,175,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CC33')">
+				<area shape="rect" coords="176,32,191,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#99CC00')">
+				<area shape="rect" coords="192,32,207,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9999FF')">
+				<area shape="rect" coords="208,32,223,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9999CC')">
+				<area shape="rect" coords="224,32,239,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#999999')">
+				<area shape="rect" coords="240,32,255,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#999966')">
+				<area shape="rect" coords="256,32,271,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#999933')">
+				<area shape="rect" coords="272,32,288,47" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#999900')">
+
+				<area shape="rect" coords="0,128,15,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9966FF')">
+				<area shape="rect" coords="16,128,31,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9966CC')">
+				<area shape="rect" coords="32,128,47,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#996699')">
+				<area shape="rect" coords="48,128,63,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#996666')">
+				<area shape="rect" coords="64,128,79,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#996633')">
+				<area shape="rect" coords="80,128,95,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#996600')">
+				<area shape="rect" coords="96,128,111,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9933FF')">
+				<area shape="rect" coords="112,128,127,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9933CC')">
+				<area shape="rect" coords="128,128,143,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#993399')">
+				<area shape="rect" coords="144,128,159,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#993366')">
+				<area shape="rect" coords="160,128,175,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#993333')">
+				<area shape="rect" coords="176,128,191,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#993300')">
+				<area shape="rect" coords="192,128,207,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9900FF')">
+				<area shape="rect" coords="208,128,223,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#9900CC')">
+				<area shape="rect" coords="224,128,239,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#990099')">
+				<area shape="rect" coords="240,128,255,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#990066')">
+				<area shape="rect" coords="256,128,271,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#990033')">
+				<area shape="rect" coords="272,128,288,143" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#990000')">
+
+				<area shape="rect" coords="0,48,15,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FFFF')">
+				<area shape="rect" coords="15,48,31,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FFCC')">
+				<area shape="rect" coords="32,48,47,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FF99')">
+				<area shape="rect" coords="48,48,63,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FF66')">
+				<area shape="rect" coords="64,48,79,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FF33')">
+				<area shape="rect" coords="80,48,95,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66FF00')">
+				<area shape="rect" coords="96,48,111,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CCFF')">
+				<area shape="rect" coords="112,48,127,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CCCC')">
+				<area shape="rect" coords="128,48,143,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CC99')">
+				<area shape="rect" coords="144,48,159,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CC66')">
+				<area shape="rect" coords="160,48,175,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CC33')">
+				<area shape="rect" coords="176,48,191,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6699FF')">
+				<area shape="rect" coords="192,48,207,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#669999')">
+				<area shape="rect" coords="208,48,223,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#669966')">
+				<area shape="rect" coords="224,48,239,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#669933')">
+				<area shape="rect" coords="240,48,255,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#669900')">
+				<area shape="rect" coords="256,48,271,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6666FF')">
+				<area shape="rect" coords="272,48,288,63" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6666CC')">
+
+				<area shape="rect" coords="0,144,15,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#66CC00')">
+				<area shape="rect" coords="15,144,31,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6699CC')">
+				<area shape="rect" coords="32,144,47,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#666699')">
+				<area shape="rect" coords="48,144,63,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#666666')">
+				<area shape="rect" coords="64,144,79,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#666633')">
+				<area shape="rect" coords="80,144,95,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#666600')">
+				<area shape="rect" coords="96,144,111,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6633FF')">
+				<area shape="rect" coords="112,144,127,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6633CC')">
+				<area shape="rect" coords="128,144,143,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#663399')">
+				<area shape="rect" coords="144,144,159,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#663366')">
+				<area shape="rect" coords="160,144,175,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#663333')">
+				<area shape="rect" coords="176,144,191,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#663300')">
+				<area shape="rect" coords="192,144,207,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6600FF')">
+				<area shape="rect" coords="208,144,223,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#6600CC')">
+				<area shape="rect" coords="224,144,239,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#660099')">
+				<area shape="rect" coords="240,144,255,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#660066')">
+				<area shape="rect" coords="256,144,271,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#660033')">
+				<area shape="rect" coords="272,144,288,159" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#660000')">
+
+				<area shape="rect" coords="0,64,15,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FFFF')">
+				<area shape="rect" coords="16,64,31,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FFCC')">
+				<area shape="rect" coords="32,64,47,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FF99')">
+				<area shape="rect" coords="48,64,63,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FF66')">
+				<area shape="rect" coords="64,64,79,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FF33')">
+				<area shape="rect" coords="80,64,95,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33FF00')">
+				<area shape="rect" coords="96,64,111,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CCFF')">
+				<area shape="rect" coords="112,64,127,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CC99')">
+				<area shape="rect" coords="128,64,143,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CC66')">
+				<area shape="rect" coords="144,64,159,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CC33')">
+				<area shape="rect" coords="160,64,175,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CC00')">
+				<area shape="rect" coords="176,64,191,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3399FF')">
+				<area shape="rect" coords="192,64,207,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#33CCCC')">
+				<area shape="rect" coords="208,64,223,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3399CC')">
+				<area shape="rect" coords="224,64,239,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#339999')">
+				<area shape="rect" coords="240,64,255,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#339966')">
+				<area shape="rect" coords="256,64,271,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#339933')">
+				<area shape="rect" coords="272,64,288,79" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#339900')">
+
+				<area shape="rect" coords="0,160,15,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3366FF')">
+				<area shape="rect" coords="16,160,31,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3366CC')">
+				<area shape="rect" coords="32,160,47,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#336699')">
+				<area shape="rect" coords="48,160,63,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#336666')">
+				<area shape="rect" coords="64,160,79,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#336633')">
+				<area shape="rect" coords="80,160,95,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#336600')">
+				<area shape="rect" coords="96,160,111,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3333FF')">
+				<area shape="rect" coords="112,160,127,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3333CC')">
+				<area shape="rect" coords="128,160,143,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#333399')">
+				<area shape="rect" coords="144,160,159,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#333366')">
+				<area shape="rect" coords="160,160,175,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#333333')">
+				<area shape="rect" coords="176,160,191,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#333300')">
+				<area shape="rect" coords="192,160,207,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3300FF')">
+				<area shape="rect" coords="208,160,223,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#3300CC')">
+				<area shape="rect" coords="224,160,239,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#330099')">
+				<area shape="rect" coords="240,160,255,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#330066')">
+				<area shape="rect" coords="256,160,271,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#330033')">
+				<area shape="rect" coords="272,160,288,175" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#330000')">
+
+				<area shape="rect" coords="0,80,15,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FFFF')">
+				<area shape="rect" coords="16,80,31,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FFCC')">
+				<area shape="rect" coords="32,80,47,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FF99')">
+				<area shape="rect" coords="48,80,63,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FF66')">
+				<area shape="rect" coords="64,80,79,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FF33')">
+				<area shape="rect" coords="80,80,95,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00FF00')">
+				<area shape="rect" coords="96,80,111,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CCFF')">
+				<area shape="rect" coords="112,80,127,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CCCC')">
+				<area shape="rect" coords="128,80,143,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CC99')">
+				<area shape="rect" coords="144,80,159,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CC66')">
+				<area shape="rect" coords="160,80,175,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CC33')">
+				<area shape="rect" coords="176,80,191,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#00CC00')">
+				<area shape="rect" coords="192,80,207,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0099FF')">
+				<area shape="rect" coords="208,80,223,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0099CC')">
+				<area shape="rect" coords="224,80,239,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#009999')">
+				<area shape="rect" coords="240,80,255,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#009966')">
+				<area shape="rect" coords="256,80,271,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#009933')">
+				<area shape="rect" coords="272,80,288,95" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#009900')">
+
+				<area shape="rect" coords="0,176,15,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0066FF')">
+				<area shape="rect" coords="16,176,31,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0066CC')">
+				<area shape="rect" coords="32,176,47,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#006699')">
+				<area shape="rect" coords="48,176,63,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#006666')">
+				<area shape="rect" coords="64,176,79,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#006633')">
+				<area shape="rect" coords="80,176,95,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#006600')">
+				<area shape="rect" coords="96,176,111,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0033FF')">
+				<area shape="rect" coords="112,176,127,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0033CC')">
+				<area shape="rect" coords="128,176,143,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#003399')">
+				<area shape="rect" coords="144,176,159,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#003366')">
+				<area shape="rect" coords="160,176,175,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#003333')">
+				<area shape="rect" coords="176,176,191,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#003300')">
+				<area shape="rect" coords="192,176,207,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0000FF')">
+				<area shape="rect" coords="208,176,223,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#0000CC')">
+				<area shape="rect" coords="224,176,239,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#000099')">
+				<area shape="rect" coords="240,176,255,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#000066')">
+				<area shape="rect" coords="256,176,271,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#000033')">
+				<area shape="rect" coords="272,176,288,192" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#000000')">
+				<area shape="default" nohref>
+			</map>
+			<map name="black">
+				<area shape="rect" coords="0,0,15,15" onmouseout="JavaScript:UpdateTextField('')" onmouseover="JavaScript:UpdateTextField('#000000')" onclick=="JavaScript:ClipBoard('#000000')">
+				<area shape="default" nohref>
+			</map>
+	</body>
+
+</html>

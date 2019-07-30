@@ -1,0 +1,1228 @@
+<!-- base href="http://www.angelfire.com/mn3/thatguy/html.html" -->
+<html>
+
+	<head>
+
+		<script>
+			function stopError() {
+				return true;
+			}
+			window.onerror = stopError
+		</script>
+		<script LANGUAGE="JavaScript">
+			function displayHTML(form) {
+				var inf = form.htmlArea.value;
+				win = window.open("", 'popup', 'toolbar = no, status = yes');
+				win.document.write("" + inf + "");
+			}
+		</script>
+		<script>
+			function doColorPalette() {
+				var w = window.open("",
+					"ColorPalette",
+					"resizable=no,status=0,scrollbars=0,menubar=0,directories=0,width=289,height=300");
+				if (w) {
+					w.location = "./hex.html";
+				}
+			}
+		</script>
+		<style type="text/css">
+			.i {
+				position: absolute;
+				top: 3;
+				left: 3;
+			}
+
+			.link {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.link:visited {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.link:link {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.link:hover {
+				color: #7cfc00;
+				text-decoration: none
+			}
+
+			.link:active {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice:hover {
+				color: #FFFFFF;
+				text-decoration: none
+			}
+
+			.r {
+				background-color: #000000;
+				border-color: #000000
+			}
+
+			.ra {
+				background-color: #ffffff;
+				border-color: #ff0000
+			}
+
+			.radio {
+				background-color: #0000ff;
+				border-color: #ffffff
+			}
+
+			.button {
+				font-family: verdana;
+				font-size: 20px;
+				background: #FFFFD0;
+				border-color: #000000
+			}
+
+			.textinput {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			.selectlist {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				scrollbar-face-color: #336699;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #0066cc;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #996600;
+				scrollbar-track-color: #006600;
+				scrollbar-arrow-color: #000000;
+				background-color: black;
+				text-color: #660000;
+			}
+
+			input {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px
+			}
+
+			textarea {
+				font-size: 13px;
+				font-family: verdana, arial, helvetica;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+		</style>
+
+
+		</style>
+		<script src="./rightmenu.js" type="text/javascript">
+			//Right-click menu- By Eyecon (http://www.webteam.ro)
+			//Slight modifications by JK
+			//Visit JavaScript Kit (http://javascriptkit.com) for script
+		</script>
+
+		<style>
+			#men {
+				BORDER-RIGHT: 2px outset;
+				BORDER-TOP: 2px outset;
+				Z-INDEX: 1;
+				LEFT: 0px;
+				VISIBILITY: hidden;
+				BORDER-LEFT: 2px outset;
+				BORDER-BOTTOM: 2px outset;
+				POSITION: absolute;
+				TOP: 0px
+			}
+
+			#men A {
+				PADDING-RIGHT: 1px;
+				PADDING-LEFT: 1px;
+				PADDING-BOTTOM: 4px;
+				MARGIN: 1px 1px 1px 16px;
+				FONT: 12px sans-serif;
+				WIDTH: 100%;
+				PADDING-TOP: 3px;
+				HEIGHT: 100%;
+				TEXT-DECORATION: none
+			}
+
+			.ico {
+				BORDER-RIGHT: medium none;
+				BORDER-TOP: medium none;
+				FLOAT: left;
+				BORDER-LEFT: medium none;
+				BORDER-BOTTOM: medium none
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//MENU TITLE
+			eyesys_title = "Site Menu"
+			//TITLE BACKGROUND COLORS
+			eyesys_titlecol1 = "black"
+			eyesys_titlecol2 = "red"
+			//TITLE COLOR
+			eyesys_titletext = "white"
+			//MENU & ITEM BACKGROUND COLOR
+			eyesys_bg = "#b2b564"
+			//ITEM BACKGROUND COLOR ON MOUSE OVER
+			eyesys_bgov = "#7cfc00"
+			//MENU COLOR
+			eyesys_cl = "black"
+			//MENU COLOR ON MOUSE OVER
+			eyesys_clov = "black"
+			//MENU WIDTH
+			eyesys_width = 160
+			//menu starts here
+			eyesys_init()
+			//menu item sintax:  eyesys_item(text,icon,link)
+			//for no icon use 'null'
+			eyesys_item('Tony\'s Place', './home2.gif', 'home.html')
+			eyesys_item('Learn HTML', null, 'html.html')
+			eyesys_item('ThE FuN PaGe', null, 'funpage.html')
+			eyesys_item('Learn Java Script', null, 'java/')
+			eyesys_item('Sign My Guest Book', null, 'guest.html')
+			eyesys_item('View My Guest Book', null, 'http://htmlgear.lycos.com/guest/control.guest?u=tonybrix&i=1&a=view')
+			eyesys_item('Email Me', null, 'Mailto:c2z232f@yahoo.com?subject=suggestions')
+			//menu closes here
+			eyesys_close()
+		</script>
+		<table cellspacing="2" cellpadding="2" border="0" width="100%">
+
+			<tr class="i">
+				<td colspan=1 align=center width="50%">
+					<form action="javascript:history.go(-1)"><input type="submit" value="Back"></form>
+				</td>
+				<td colspan=1 align=center width="50%"><a href="javascript:doColorPalette();" onmouseover="window.status='Hex Color Palette';return true" onclick="window.status='Hex Color Palette';return true"
+					 onmouseout="window.status='';return true" class="link">
+						<font face="verdana" size="3">Hex Color palette</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#BasicTags" onmouseover="window.status='Basic Tags';return true" onclick="window.status='Basic Tags';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Basic Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#GraphicalElements" onmouseover="window.status='Graphical Elements';return true" onclick="window.status='Graphical Elements';return true" onmouseout="window.status='';return true"
+					 class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Graphical Elements</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#HeaderTags" onmouseover="window.status='Header Tags';return true" onclick="window.status='Header Tags';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Header Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Tables" onmouseover="window.status='Tables';return true" onclick="window.status='Tables';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Tables</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#BodyAttributes" onmouseover="window.status='Body Attributes';return true" onclick="window.status='Body Attributes';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Body Attributes</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#TableAttributes" onmouseover="window.status='Table Attributes';return true" onclick="window.status='Table Attributes';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Table Attributes</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#TextTags" onmouseover="window.status='Text Tags';return true" onclick="window.status='Text Tags';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Text Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Frames" onmouseover="window.status='Frames';return true" onclick="window.status='Basic 'Frames';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Frames</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#Links" onmouseover="window.status='Links';return true" onclick="window.status='Links';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Links</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#FrameAttributes" onmouseover="window.status='Frame Attributes';return true" onclick="window.status='Frame Attributes';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Frame Attributes</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#Formatting" onmouseover="window.status='Formatting';return true" onclick="window.status='Formatting';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Formatting</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Forms" onmouseover="window.status='Forms';return true" onclick="window.status='Forms';return true" onmouseout="window.status='';return true" class="link">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Forms</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="BasicTags">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Basic Tags</b></font>
+						</font>
+				</td></a>
+			</tr>
+			<tr>
+				<td valign=top align=left>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="660000"><b><tt>
+								<font size="2" color="#339900">&#60;html&#62;&#60;/html&#62;</font>
+							</tt></b><br>
+						Creates an HTML document</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan="2">
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;head&#62;&#60;/head&#62;</font>
+							</tt></b><br>
+						Sets off the title and other information that isn't displayed on the Web page itself</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body&#62;&#60;/body&#62;</font>
+							</tt></b><br>
+						Sets off the visible portion of the document</font>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=1></td>
+			</tr>
+			<br>
+			<tr>
+				<td><br></td>
+			</tr>
+			<td colspan=2 align=left bgcolor="336699"><a name="HeaderTags">
+					<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Header Tags</b></font>
+					</font>
+				</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;title&#62;&#60;/title&#62;</font>
+							</tt></b><br>
+						Puts the name of the document in the title bar
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="BodyAttributes">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="#ffffff"><b>Body Attributes<b /></font>
+						</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body bgcolor=?&#62;</font>
+							</tt></b><br>
+						Sets the background color, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body background=?&#62;</font>
+							</tt></b><br>
+						Sets the background, using image</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body behavior="fixed"&#62;</font>
+							</tt></b><br>
+						Sets the background image as a fixed image<br>(Background image doesn't move while scrolling)</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body text=?&#62;</font>
+							</tt></b><br>
+						Sets the text color, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body link=?&#62;</font>
+							</tt></b><br>
+						Sets the color of links, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body vlink=?&#62;</font>
+							</tt></b><br>
+						Sets the color of visited links, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;body alink=?&#62;</font>
+							</tt></b><br>
+						Sets the color of links on click, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="TextTags">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><b>Text Tags<b /></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;pre&#62;This is an<br>
+									exapmle&#60;/pre&#62;</font>
+							</tt></b><br>
+						Creates preformatted text<br>(it shows up exactly as you type it)</font>
+					<font color="#660000">
+						<pre>This is an
+example.</pre>
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hl&#62;&#60;/hl&#62;</font>
+							</tt></b><br>
+						Creates the largest headline</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;h6&#62;&#60;/h6&#62;</font>
+							</tt></b><br>
+						Creates the smallest headline</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;b&#62;this is an example.&#60;/b&#62;</font>
+							</tt></b><br>
+						Creates bold text</font><br>
+					<font color="#660000"><b>This is an
+							example.</b></font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;i&#62;This is an example.&#60;/i&#62;</font>
+							</tt></b><br>
+						Creates italic text</font><br>
+					<font color="#660000"><i>This is an
+							example.</i></font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;tt&#62;This is an example.&#60;/tt&#62;</font>
+							</tt></b><br>
+						Creates teletype, or typewriter-style text</font><br>
+					<font color="#660000"><tt>This is an
+							example.</tt></font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;cite&#62;This is an
+									example.&#60;/cite&#62;</font>
+							</tt></b><br>
+						Creates a citation, usually italic</font><br>
+					<font color="#660000"><cite>This is an
+							example.</cite>
+						<font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;em&#62;This is an
+									example.&#60;/em&#62;</font>
+							</tt></b><br>
+						Emphasizes a word with italic or bold</font><br>
+					<font color="#660000"><em>This is an
+							example.</em></font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;strong&#62;This is an
+									example.&#60;/strong&#62;</font>
+							</tt></b>
+						<br>
+						Emphasizes a word (with italic or bold)</font><br>
+					<font color="#660000"><strong>This is an
+							example.</strong></font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;font size=?&#62;&#60;/font&#62;</font>
+							</tt></b><br>
+						Sets size of font (<font size=1>1</font>
+						<font size=2>2</font>
+						<font size=3>3</font>
+						<font size=4>4</font>
+						<font size=5>5</font>
+						<font size=6>6</font>
+						<font size=7>7)</font>
+					</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;font face=?&#62;&#60;/font&#62;</font>
+							</tt></b><br>
+						Sets font style (<font face=arial>Ariel</font>, <font face=verdana>Verdana</font>, <font face=helvetica>Helvetica</font>, <font face=sans-serif>Sans-serif</font>, etc.)</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;font color=?&#62;&#60;/font&#62;</font>
+							</tt></b><br>
+						Sets font color, using name or hex value</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="Links">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><b>Links<b /></font>
+						</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;a href="URL" target="parent"&#62;&#60;/a&#62;</font>
+							</tt></b><br>
+						Creates a hyperlink and opens a new browser</font><br><a href="." target="parent" class="link">This is an
+						example.</a>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;a href="mailto:EMAIL"&#62;&#60;/a&#62;</font>
+							</tt></b><br>
+						Creates a mailto link</font><br> <a href="mailto:onebelow70@hotmail.com" class="link">This is an
+						example.</a>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;a name="NAME"&#62;&#60;/a&#62;</font>
+							</tt></b><br>
+						Creates a target location within a document</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;a href="#NAME"&#62;&#60;/a&#62;</font>
+							</tt></b><br>
+						Links to that target location from elsewhere in the document</font><br><a href="#Links" class="link">This is an
+						example.</a>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="Formatting">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><b>Formatting</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;p&#62;&#60;/p&#62;</font>
+							</tt></b><br>
+						Creates a new paragraph</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;p align=?&#62;</font>
+							</tt></b><br>
+						Aligns a paragraph to the left, right, or center</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;br&#62;</font>
+							</tt></b><br>
+						Inserts a line break</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;blockquote&#62;&#60;/blockquote&#62;</font>
+							</tt>
+						</b><br>
+						indents text from both sides</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;dl&#62;&#60;/dl&#62;</font>
+							</tt></b><br>
+						Creates a definition list</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;dt&#62;</font>
+							</tt></b><br>
+						Precedes each definition term</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;dd&#62;</font>
+							</tt></b><br>
+						Precedes each definition</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;ol&#62;&#60;/ol&#62;</font>
+							</tt></b><br>
+						Creates a numbered list</font>
+				</td>
+			</tr>
+			<tr>
+
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;li&#62;&#60;/li&#62;</font>
+							</tt></b><br>
+						Precedes each list item, and adds a number</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;ul&#62;&#60;/ul&#62;</font>
+							</tt></b><br>
+						Creates a bulleted list</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;div align=?&#62;</font>
+							</tt></b><br>
+						A generic tag used to format large blocks of HTML, also used for stylesheets</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+				</td>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="GraphicalElements">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Graphical Elements</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;img src="name"&#62;</font>
+							</tt></b><br>
+						Adds an image</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;img align=?&#62;</font>
+							</tt></b><br>
+						Aligns an image: left, right, center, bottom, top, middle</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;img border=?&#62;</font>
+							</tt></b><br>
+						Sets size of border around an image</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hr&#62;</font>
+							</tt></b><br>
+						Inserts a horizontal rule</font><br>
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hr color=?&#62;</font>
+							</tt></b><br>
+						Sets color of rule, using name or hex value</font><Br>
+					<hr color="red">
+					<hr color="orange">
+					<hr color="yellow">
+					<hr color="green">
+					<hr color="blue">
+					<hr color="purple">
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hr size=?&#62;</font>
+							</tt></b><br>
+						Sets size (height) of rule, in pixels</font><br>
+					<hr size="10">
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hr width=?&#62;</font>
+							</tt></b><br>
+						Sets width of rule, in percentage or absolute value</font><Br>
+					<hr align="center" width="50%">
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;hr noshade&#62;</font>
+							</tt></b><br>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000">Creates a rule without a shadow</font>
+					</font><br>
+					<hr noshade>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="Tables">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Tables</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;table&gt;&#60;/table&gt;</font>
+							</tt></b><br>
+						Creates a table</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;tr&gt;&#60;/tr&gt;</font>
+							</tt></b><br>
+						Sets off each row in a table</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;td&gt;&#60;/td&gt;</font>
+							</tt></b><br>
+						Sets off each cell in a row</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;th&gt;&#60;/th&gt;</font>
+							</tt></b><br>
+						Sets off the table header (a normal cell with bold, centered text)</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<td colspan=2 align=left bgcolor="336699"><a name="TableAttributes">
+					<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Table Attributes</b></font>
+				</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;table border=#&#62;</font>
+							</tt></b><br>
+						Sets width of border around table cells</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;table cellspacing=#&#62;</font>
+							</tt></b><br>
+						Sets amount of space between table cells</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;table cellpadding=#&#62;</font>
+							</tt></b><br>
+						Sets amount of space between a cell's border and its contents</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;table width=?&#62;</font>
+							</tt></b><br>
+						Sets width of table, in pixels or percent</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;tr align=?&#62; or &#60;td align=?&#62;</font>
+							</tt></b><br>
+						Sets alignment for cell(s) (left, center, or right)</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;tr valign=?&#62; or &#60;td valign=?&#62;</font>
+							</tt></b><br>
+						Sets vertical alignment for cell(s) (top, middle, or bottom)</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;td colspan=?&#62;</font>
+							</tt></b><br>
+						Sets number of columns a cell should span</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;td rowspan=?&#62;</font>
+							</tt></b><br>
+						Sets number of rows a cell should span</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;td nowrap&#62;</font>
+							</tt></b><br>
+						Prevents the lines within a cell from being broken to fit</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="Frames">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Frames</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frameset&#62;&#60;/frameset&#62;</font>
+							</tt></b><br>
+						tag in a frames document. Can also be nested in other framesets</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frameset rows="value,value"&#62;</font>
+							</tt></b><br>
+						Defines the rows within a frameset, using number in pixels, or percentage of width</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frameset cols="value,value"&#62;</font>
+							</tt></b><br>
+						Defines the columns within a frameset, using number in pixels, or percentage of width</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame&#62;</font>
+							</tt></b><br>
+						Defines a single frame - or region - within a frameset</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;noframes&#62;&#60;/noframes&#62;</font>
+							</tt></b><br>
+						Defines what will appear on browsers that don't support frames</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="FrameAttributes">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Frames Attributes</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame src="URL"&#62;</font>
+							</tt></b><br>
+						Specifies which HTML document should be displayed</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame name="name"&#62;</font>
+							</tt></b><br>
+						Names the frame, or region, so it may be targeted by other frames</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame marginwidth=#&#62;</font>
+							</tt></b><br>
+						Defines the left and right margins for the frame; must be equal to or greater
+						than 1</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame marginheight=#&#62;</font>
+							</tt></b><br>
+						Defines the top and bottom margins for the frame; must be equal to or greater
+						than 1</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame scrolling=VALUE&#62;</font>
+							</tt></b><br>
+						Sets whether the frame has a scrollbar; value may equal "yes," "no," or "auto.
+						" The default, as in ordinary documents, is auto.</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;frame noresize&#62;</font>
+							</tt></b><br>
+						Prevents the user from resizing a frame</font>
+				</td>
+			</tr>
+			<tr>
+				<td><br></td>
+			</tr>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699"><a name="Forms">
+						<font face="Verdana, helvetica, sans-serif" size=1 color="ffffff"><B>Forms</b></font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1>
+					<font face="Verdana, Helvetica, Sans-serif" size=1>
+						For functional forms, you'll have to run a CGI script. The HTML just creates the appearance of a form.</font>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=left colspan=2>
+					<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+								<font size="2" color="#339900">&#60;form&#62;&#60;/form&#62;</font>
+							</tt></b><br>
+						Creates all forms</font>
+				</td>
+			</tr>
+			<form>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;select multiple size=?&#62;&#60;/select&#62;</font>
+								</tt></b><br>
+							Creates a scrolling menu. Size sets the number of menu items visible before you need to scroll.</font><br> <select multiple name="select1" size="3">
+							<option>Hi.</option>
+							<option>This</option>
+							<option>is</option>
+							<option>an</option>
+							<option>example</option>
+							<option>.</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;select name="NAME"&#62;&#60;/select&#62;</font>
+								</tt></b><br>
+							Creates a pulldown menu</font><br><select name="select1">
+							<option>Hi.</option>
+							<option>This</option>
+							<option>is</option>
+							<option>an</option>
+							<option>example</option>
+							<option>.</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;option&#62;&#60;/option&#62;</font>
+								</tt></b><br>
+							Sets off each menu item</font>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;textarea name="NAME" cols=# rows=# value="text"&#62;&#60;/textarea&#62;</font>
+								</tt></b><br>
+							Creates a text box area. Columns set the width; rows set the height. Value sets the message in the textarea</font> <br><textarea name="textarea1" cols=40 rows=5 value="This is an example."
+						 onmouseover="if(this.value == 'This is an example.') {this.value = 'You can write in the box'}" onmouseout="if(this.value == 'You can write in the box') {this.value = 'This is an example.'}"
+						 onblur="if(this.value == '') {this.value =  'This is an example.'}" onfocus="if(this.value == 'You can write in the box') {this.value = ''}">This is an example.</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type="checkbox" name="NAME"&#62;</font>
+								</tt></b><br>
+							Creates a checkbox. Text follows tag.</font><br><input type="checkbox" name="input1" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input
+						 type="checkbox" name="input6" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="checkbox" name="input3" class="r"
+						 onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="checkbox" name="input4" class="r" onmouseover="this.className='radio'"
+						 onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="checkbox" name="input5" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'"
+						 bgcolor="#000000">
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type="radio" name="NAME" value="x"&#62;</font>
+								</tt></b><br>
+							Creates a radio button. Text follows tag</font><br><input type="radio" name="input2" value="x" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'"
+						 bgcolor="#000000"><input type="radio" name="input2" value="f" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="radio" name="input2"
+						 value="d" class="r" onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="radio" name="input2" value="s" class="r"
+						 onmouseover="this.className='radio'" onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000"><input type="radio" name="input2" value="a" class="r" onmouseover="this.className='radio'"
+						 onmouseout="this.className='r'" onfocus="this.className='ra'" bgcolor="#000000">
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type=text name="NAME" size=#&#62;</font>
+								</tt></b><br>
+							Creates a one-line text area. Size sets max length, in characters.</font><br><input type=text name="foo" size=22 value="This is an example."
+						 onmouseover="if(this.value == 'This is an example.') {this.value = 'You can write in the box'}" onmouseout="if(this.value == 'You can write in the box') {this.value = 'This is an example.'}"
+						 onBlur="if(this.value == '') {this.value = 'This is an example.'}" onfocus="if(this.value == 'You can write in the box') {this.value = ''}">
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type="submit" value="NAME"&#62;</font>
+								</tt></b><br>
+							Creates a Submit button</font><br><input type="button" value="This is an example." onMOUSEOVER="this.value='You can click on it'" onCLICK="this.value='You can connect it to a URL'"
+						 onmouseout="this.value='This is an example.'">
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type="image" border=0 name="NAME" src="name.gif"&#62;</font>
+								</tt></b><br>
+							Creates a Submit button using an image</font><br><input type="image" border=0 name="pic1" src="./images/this.gif" onmouseover="{this.src='./images/that.gif'}" onmouseout="{this.src='./images/this.gif'}" width="170"
+						 height="19">
+					</td>
+				</tr>
+				<tr>
+					<td valign=top align=left colspan=2>
+						<font face="Verdana, Helvetica, Sans-serif" size=1 color="#660000"><b><tt>
+									<font size="2" color="#339900">&#60;input type="reset"&#62;</font>
+								</tt></b><br>
+							Creates a Reset button</font><br><input type="reset">
+					</td>
+				</tr>
+			</form>
+			<tr>
+				<td colspan=2 align=left bgcolor="336699">
+					<font size=1 color="336699">|</font>
+				</td>
+			</tr>
+
+			<!-- TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD
+     TTTTTTTTHHHHHHHHHHHHHEEEEEEEEEEEEEE EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDD-->
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#BasicTags" onmouseover="window.status='Basic Tags';return true" onclick="window.status='Basic Tags';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Basic Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#GraphicalElements" onmouseover="window.status='Graphical Elements';return true" onclick="window.status='Graphical Elements';return true" onmouseout="window.status='';return true"
+					 class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Graphical Elements</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#HeaderTags" onmouseover="window.status='Header Tags';return true" onclick="window.status='Header Tags';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Header Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Tables" onmouseover="window.status='Tables';return true" onclick="window.status='Tables';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Tables</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#BodyAttributes" onmouseover="window.status='Body Attributes';return true" onclick="window.status='Body Attributes';return true" onmouseout="window.status='';return true" class="link"
+					 target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Body Attributes</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#TableAttributes" onmouseover="window.status='Table Attributes';return true" onclick="window.status='Table Attributes';return true" onmouseout="window.status='';return true" class="link"
+					 target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Table Attributes</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#TextTags" onmouseover="window.status='Text Tags';return true" onclick="window.status='Text Tags';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Text Tags</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Frames" onmouseover="window.status='Frames';return true" onclick="window.status='Basic 'Frames';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Frames</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#Links" onmouseover="window.status='Links';return true" onclick="window.status='Links';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Links</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#FrameAttributes" onmouseover="window.status='Frame Attributes';return true" onclick="window.status='Frame Attributes';return true" onmouseout="window.status='';return true" class="link"
+					 target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Frame Attributes</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan=1 align=left><a href="./html.html#Formatting" onmouseover="window.status='Formatting';return true" onclick="window.status='Formatting';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Formatting</font>
+					</a></td>
+				<td colspan=1 align=left><a href="./html.html#Forms" onmouseover="window.status='Forms';return true" onclick="window.status='Forms';return true" onmouseout="window.status='';return true" class="link" target="main">
+						<font face="wingdings" color="white" size="1">u</font>
+						<font face="verdana" size="2"> Forms</font>
+					</a></td>
+			</tr><br><br>
+			<tr>
+				<td colspan=1 align=center width="50%">
+					<form action="javascript:history.go(-1)"><input type="submit" target="main" value="Back"></form>
+				</td>
+				<td colspan=1 align=center width="50%"><a href="javascript:doColorPalette();" onmouseover="window.status='Hex Color Palette';return true" onclick="window.status='Hex Color Palette';return true"
+					 onmouseout="window.status='';return true" class="link">
+						<font face="verdana" size="3">Hex Color palette</font>
+					</a></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<font size="4" color="#ffffff">Try some HTML</font>
+					<form>
+						<textarea name="htmlArea" cols=95% rows=12>
+&lt;html&gt;
+&lt;head&gt;
+
+
+
+&lt;/head&gt;
+&lt;body&gt;
+
+
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+						<br>
+						<input type="button" value="view" onclick="displayHTML(this.form)"><input type="reset">
+					</form>
+		</table>
+		</td>
+		</tr>
+		</table>
+	</body>
+
+</html>

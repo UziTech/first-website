@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<title>Trick or Trash</title>
+	</head>
+
+	<body>
+		<div style="position:absolute; top:0; left:0">
+			<table height=100% width=100% align=center valign=middle>
+				<tr align=center valign=middle>
+					<td><EMBED SRC="http://www.angelfire.com/doc/arcade/trash.dcr" width="496" height="320">
+						</EMBED>
+						<BR>
+						<FONT FACE="ARIAL,HELVETICA" SIZE="1">
+							INSTRUCTIONS: Use your mouse to move the goody<BR>
+							bag. Catch the good stuff and avoid the bad stuff.</font>
+						<Br><a href="javascript:window.close()" onmouseover="window.status='Close This Window';return true" onclick="window.status='Close This Window';return true" onmouseout="window.status='';return true">
+							<font face="verdana">Close Window</font>
+						</a>
+		</div>
+		<script language=JavaScript>
+			<!--
+
+			//Disable right click script III- By Renigade (renigade@mediaone.net)
+			//For full source code, visit http://www.dynamicdrive.com
+
+			var message = "alert('If you need to see HTML e-mail me.')";
+			///////////////////////////////////
+			function clickIE() {
+				if (document.all) {
+					(message);
+					return false;
+				}
+			}
+
+			function clickNS(e) {
+				if (document.layers || (document.getElementById && !document.all)) {
+					if (e.which == 2 || e.which == 3) {
+						(message);
+						return false;
+					}
+				}
+			}
+			if (document.layers) {
+				document.captureEvents(Event.MOUSEDOWN);
+				document.onmousedown = clickNS;
+			} else {
+				document.onmouseup = clickNS;
+				document.oncontextmenu = clickIE;
+			}
+
+			document.oncontextmenu = new Function("return false")
+			// -->
+		</script>
+	</body>
+
+</html>

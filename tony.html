@@ -1,0 +1,79 @@
+<html>
+
+	<head>
+		<title>Tony's Place&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</title>
+
+		<script>
+			//Document title scroller- By Graeme Robinson (me@graemerobinson.co.uk)
+			//Exlusive permission granted to Dynamic Drive to include this script in their DHTML archive.
+			//For full source code, terms of use visit http://www.dynamicdrive.com
+
+			var repeat = 1 //enter 0 to not repeat scrolling after 1 run, othersise, enter 1
+			var title = document.title
+			var leng = title.length
+			var start = 1
+
+			function titlemove() {
+				titl = title.substring(start, leng) + title.substring(0, start)
+				document.title = titl
+				start++
+				if (start == leng + 1) {
+					start = 0
+					if (repeat == 0)
+						return
+				}
+				setTimeout("titlemove()", 140)
+			}
+			if (document.title)
+				titlemove()
+		</script>
+
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+		<style>
+			.spanstyle {
+				position: absolute;
+				visibility: visible;
+				top: -50px;
+				font-size: 10pt;
+				font-family: Verdana;
+				font-weight: bold;
+				color: black;
+			}
+		</style>
+		<style TYPE="text/css">
+			body {
+				cursor: url("./cur.cur");
+				scrollbar-face-color: #7cfc00;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #66ffff;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #990000;
+				scrollbar-track-color: #0033ff;
+				scrollbar-arrow-color: #000000;
+				background-color: black;
+				width: 100%;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+		</style>
+
+
+		<frameset cols="205,861*" frameborder="NO" border="0" framespacing="0" rows="*" scrolling="no">
+			<frame name="leftFrame" noresize scrolling="no" src="./links.html">
+				<!-- frameset rows="80,*" frameborder="NO" border="0" framespacing="0" -->
+				<!-- frame name="topFrame" scrolling="NO" noresize src="./ad.html" -->
+				<frame name="main" src="./home.html">
+					<!-- /frameset -->
+		</frameset>
+	</head>
+	<noframes>
+
+		<body bgcolor="#FFFFFF">
+
+
+
+			<a href="./home.html"><big>Click Here To Go To My Page</big></a>
+		</body>
+	</noframes>
+
+</html>

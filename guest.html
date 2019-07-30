@@ -1,0 +1,367 @@
+<html>
+
+	<head>
+		<title>Tony's Guestbook</title>
+		<meta name="author" content="Tony Brix">
+
+		<script language="JavaScript">
+			function stopError() {
+				return true;
+			}
+
+			window.onerror = stopError;
+		</script>
+		<style type="text/css">
+			.h {
+				visibility: hidden
+			}
+
+			.guestbook {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:visited {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:link {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:hover {
+				color: #3333ff;
+				text-decoration: none
+			}
+
+			.guestbook:active {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:link {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:active {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:visited {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.copynotice:hover {
+				color: #ffffff;
+				text-decoration: none;
+				position: absolute;
+				top: 98%;
+				right: 40%
+			}
+
+			.button {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background: #FFFFD0;
+				border-color: #000000
+			}
+
+			.textinput {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			.select {
+				font-family: verdana;
+				text-decoration=overline;
+				font-size: 13px;
+				background-color: #7cfc00;
+				border-color: #000000;
+				color: #0033ff;
+				font-weight: bold
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				color: #ff0101;
+				scrollbar-face-color: #7cfc00;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #66ffff;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #990000;
+				scrollbar-track-color: #0033ff;
+				scrollbar-arrow-color: #000000;
+				background-color: black
+			}
+
+			input {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px
+			}
+
+			textarea {
+				font-size: 13px;
+				font-family: verdana, arial, helvetica;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			font {
+				color: #ff0101
+			}
+		</style>
+
+		<style type="text/css">
+			A: {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:active {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:hover {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:link {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:visited {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+		</style>
+		<script src="./rightmenu.js" type="text/javascript">
+			//Right-click menu- By Eyecon (http://www.webteam.ro)
+			//Slight modifications by JK
+			//Visit JavaScript Kit (http://javascriptkit.com) for script
+		</script>
+
+		<style>
+			#men {
+				BORDER-RIGHT: 2px outset;
+				BORDER-TOP: 2px outset;
+				Z-INDEX: 1;
+				LEFT: 0px;
+				VISIBILITY: hidden;
+				BORDER-LEFT: 2px outset;
+				BORDER-BOTTOM: 2px outset;
+				POSITION: absolute;
+				TOP: 0px
+			}
+
+			#men A {
+				PADDING-RIGHT: 1px;
+				PADDING-LEFT: 1px;
+				PADDING-BOTTOM: 4px;
+				MARGIN: 1px 1px 1px 16px;
+				FONT: 12px sans-serif;
+				WIDTH: 100%;
+				PADDING-TOP: 3px;
+				HEIGHT: 100%;
+				TEXT-DECORATION: none
+			}
+
+			.ico {
+				BORDER-RIGHT: medium none;
+				BORDER-TOP: medium none;
+				FLOAT: left;
+				BORDER-LEFT: medium none;
+				BORDER-BOTTOM: medium none
+			}
+		</style>
+	</head>
+
+	<body bgcolor="#000000" vlink="#99ff99" text="red" link="#99ff00" alink="#99ff00">
+		<script type="text/javascript">
+			//MENU TITLE
+			eyesys_title = "Site Menu"
+			//TITLE BACKGROUND COLORS
+			eyesys_titlecol1 = "black"
+			eyesys_titlecol2 = "red"
+			//TITLE COLOR
+			eyesys_titletext = "white"
+			//MENU & ITEM BACKGROUND COLOR
+			eyesys_bg = "#b2b564"
+			//ITEM BACKGROUND COLOR ON MOUSE OVER
+			eyesys_bgov = "#7cfc00"
+			//MENU COLOR
+			eyesys_cl = "black"
+			//MENU COLOR ON MOUSE OVER
+			eyesys_clov = "black"
+			//MENU WIDTH
+			eyesys_width = 160
+			//menu starts here
+			eyesys_init()
+			//menu item sintax:  eyesys_item(text,icon,link)
+			//for no icon use 'null'
+			eyesys_item('Tony\'Place', '/home2.gif', 'home.html')
+			eyesys_item('Learn HTML', null, 'html.html')
+			eyesys_item('ThE FuN PaGe', null, 'funpage.html')
+			eyesys_item('Learn Java Script', null, 'java/')
+			eyesys_item('Sign My Guest Book', null, 'guest.html')
+			eyesys_item('View My Guest Book', null, 'http://htmlgear.lycos.com/guest/control.guest?u=tonybrix&i=1&a=view')
+			eyesys_item('Email Me', null, 'Mailto:c2z232f@yahoo.com?subject=suggestions')
+			//mene closes here
+			eyesys_close()
+		</script>
+
+		<script language="javascript" src="./inc/js/browser_detect.js"></script>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="780" align="center">
+			<tr>
+				<td height="14">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form name="main" method="POST" action="http://htmlgear.lycos.com/guest/control.guest?u=tonybrix">
+
+						<center>
+							<table border="0" cellpadding="6" cellspacing="6" width="90%" bgcolor="#7cfc00">
+								<tr>
+									<td width="100%" bgcolor="#3333ff">
+										<h2>Sign My Guestbook</h2>
+
+										<table>
+											<tr>
+												<td nowrap valign="top" align="right">
+													<font size="2" face="verdana">
+														<b>Name:</b></font>
+												</td>
+												<td align="left"><input type="hidden" name="fields" value="gb_0">
+													<input type="hidden" name="fset_gb_0" value="T,Name:">
+													<input type="text" name="gb_0" value="" MAXLENGTH="40" SIZE="40">
+												</td>
+											</tr>
+											<tr>
+												<td nowrap valign="top" align="right">
+													<font size="2" face="verdana">
+														<b>Homepage:</b></font>
+												</td>
+												<td align="left"><input type="hidden" name="fields" value="gb_1">
+													<input type="hidden" name="fset_gb_1" value="L,Homepage:">
+													<input type="text" name="gb_1" value="http://" MAXLENGTH="200" SIZE="40">
+												</td>
+											</tr>
+											<tr>
+												<td nowrap valign="top" align="right">
+													<font size="2" face="verdana">
+														<b>E-Mail:</b></font>
+												</td>
+												<td align="left"><input type="hidden" name="fields" value="gb_2">
+													<input type="hidden" name="fset_gb_2" value="E,E-Mail:">
+													<input type="text" name="gb_2" value="" MAXLENGTH="80" SIZE="40">
+												</td>
+											</tr>
+											<tr>
+												<td nowrap valign="top" align="right">
+													<font size="2" face="verdana">
+														<b>Comments:</b></font>
+												</td>
+												<td align="left"><input type="hidden" name="fields" value="gb_3">
+													<input type="hidden" name="fset_gb_3" value="A,Comments:">
+													<textarea name="gb_3" cols="40" rows="5" wrap></textarea>
+												</td>
+											</tr>
+											<tr>
+												<td nowrap valign="top" align="right">
+													<font size="2" face="verdana">
+														<b>Rate My Page:</b></font>
+												</td>
+												<td align="left"><input type="hidden" name="fields" value="gb_4">
+													<input type="hidden" name="fset_gb_4" value="D,Rate My Page:,10 It's Great*,9,8,7,6,5 it's OK,4,3,2,1,0 It Sucks">
+													<select name="gb_4">
+														<option name="gb_4" value="0" selected>10 It's Great
+														<option name="gb_4" value="1">9
+														<option name="gb_4" value="2">8
+														<option name="gb_4" value="3">7
+														<option name="gb_4" value="4">6
+														<option name="gb_4" value="5">5 it's OK
+														<option name="gb_4" value="6">4
+														<option name="gb_4" value="7">3
+														<option name="gb_4" value="8">2
+														<option name="gb_4" value="9">1
+														<option name="gb_4" value="10">0 It Sucks
+													</select>
+												</td>
+											</tr>
+										</table>
+										<br><b><input type="checkbox" name="private">&nbsp;PRIVATE</b> - I only want the web site owner to see my entry.
+									</td>
+								</tr>
+							</table>
+						</center>
+
+						<input type="hidden" name="a" value="sign">
+						<input type="hidden" name="body" value="&lt;body bgcolor=&quot;#000000&quot; vlink=&quot;#99ff99&quot; text=&quot;red&quot; link=&quot;#99ff00&quot; alink=&quot;#99ff00&quot;&gt;">
+						<input type="hidden" name="box" value="">
+						<input type="hidden" name="boxb" value="000000">
+						<input type="hidden" name="boxbhex" value="7cfc00">
+						<input type="hidden" name="boxi" value="000000">
+						<input type="hidden" name="boxihex" value="3333ff">
+						<input type="hidden" name="font" value="verdana">
+						<input type="hidden" name="fontface" value="">
+						<input type="hidden" name="fontsz" value="2">
+						<input type="hidden" name="hfilt" value="255">
+						<input type="hidden" name="required" value="gb_0, gb_2, gb_3">
+						<input type="hidden" name="hptitle" value="Tony's Place">
+						<input type="hidden" name="hpurl" value="./home.html">
+						<input type="hidden" name="i" value="1">
+						<input type="hidden" name="mode" value="O">
+						<input type="hidden" name="pokay" value="checked">
+						<input type="hidden" name="r" value="./home.html">
+						<input type="hidden" name="rule" value="1">
+						<input type="hidden" name="ruleimg" value="http://">
+						<input type="hidden" name="script" value="http://htmlgear.lycos.com/guest/control.guest">
+						<input type="hidden" name="title" value="Tony's Place">
+						<input type="hidden" name="tz" value="-6">
+						<input type="hidden" name="u" value="tonybrix">
+
+
+						<br>
+
+						<center>
+							<input type="submit" name="b_sign" value="Continue">
+						</center>
+
+					</form>
+
+				</td>
+			</tr>
+		</table>
+
+
+	</body>
+
+</HTML>

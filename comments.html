@@ -1,0 +1,268 @@
+<!--form action="http://www.angelfire.com/cgi-bin/script_library/form_handler_mail" METHOD=POST>
+	<input type="hidden" name="end_display" value="http://www.YOURLINK.com">
+	<input type="hidden" name="required" value="email">
+	<input type="hidden" name="order" value="visitor_name, email">
+	<input type="hidden" name="savefile" value="visitors.txt">
+	<input type="hidden" name="email_to" value="username@somewhere.com">
+</form-->
+<html>
+
+	<head>
+		<title>Comments</title>
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=2)">
+		<meta http-equiv="Page-Exit" content="blendTrans(Duration=2)">
+		<STYLE type="text/css">
+			.guestbook {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			font {
+				color: #7cfc00;
+			}
+
+			.guestbook:visited {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:link {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.guestbook:hover {
+				color: #3333ff;
+				text-decoration: none
+			}
+
+			.guestbook:active {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice {
+				color: #ffffff;
+				text-decoration: none
+			}
+
+			.copynotice:hover {
+				color: #FFFFFF;
+				text-decoration: none
+			}
+
+			.button {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background: #FFFFD0;
+				border-color: #000000
+			}
+
+			.t {
+				margin-right: 25%
+			}
+
+			.g {
+				text-decoration: overline
+			}
+
+			.i {
+				margin-left: 25%
+			}
+
+			.selectlist {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #EEEEFF;
+				border-color: #000000
+			}
+
+			body {
+				cursor: url("./cur.cur");
+				scrollbar-face-color: #7cfc00;
+				scrollbar-shadow-color: #000000;
+				scrollbar-highlight-color: #66ffff;
+				scrollbar-3dlight-color: #ff66ff;
+				scrollbar-darkshadow-color: #990000;
+				scrollbar-track-color: #0033ff;
+				scrollbar-arrow-color: #000000;
+				background-color: black;
+			}
+
+			input {
+				font-family: verdana, arial, helvetica;
+				font-size: 13px;
+				background-color: #7cfc00;
+				border-color: #70f0ff
+			}
+
+			textarea {
+				font-size: 13px;
+				font-family: verdana, arial, helvetica;
+				background-color: #7cfc00;
+				border-color: #ffffff
+			}
+
+			A:active {
+				color: #7cfc00;
+			}
+
+			A:hover {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+
+			A:link {
+				color: #7cfc00;
+				text-decoration=none;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+
+
+		<center><a name="comments">
+				<font size="42">Comments on my page</font>
+			</a><br>
+
+			<center>
+				<font><b>Add A Comment</b></font>
+			</center>
+			<form action="http://www.angelfire.com/cgi-bin/script_library/form_handler_mail" METHOD=POST name="com">
+				<center>
+					<table width=100% border=0 cellpadding=3 cellspacing=0>
+						<tr>
+							<td width="10%" align="right">
+								<font size=1>Name: (required)</font>
+							</td>
+							<td>
+								<input name="name" class="t" size=30>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<font size=1>Email: (optional)</font>
+							</td>
+							<td>
+								<input name="email" class="t" value="you@email.com" onFocus="if (this.value == 'you@email.com') {this.value = ''}" onBlur="if (value == '') {value = 'you@email.com'}" size=30></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<font size=1>Age: (optional)</font>
+							</td>
+							<td>
+								<input name="age" class="t" size=3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<font size=1>Homepage URL: (optional)</font>
+							</td>
+							<td>
+								<input name="homepage_url" class="t" size=30>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<font size=1>Comments:</font>
+								<font size=1> (required)</font><br>
+								<center>
+									<textarea name="comments" class="t" rows=10 cols=60 wrap></textarea>
+								</center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="hidden" name="end_display" value="./comments.html">
+								<input type="hidden" name="order" value="name, email, age, homepage_url, comments">
+								<input type="hidden" name="required" value="name, comments">
+								<input type="hidden" name="savefile" value="./comments.txt">
+							</td>
+						</tr>
+						<tr>
+							<td align="center" colspan="2"><input onfocus="if (com.Email.value == 'you@email.com'){com.Email.value = ''}" type=submit value="Post">
+								<input type="reset" value="Reset"><br>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</form>
+
+
+
+			<div style="text-decoration: overline; position:absolute; top:0; left:0;">
+				<applet codebase="http://chat.homestead.com/~site/StandAlone" code=ChatRoom/ChatRoomApplet.class width=400 height=175 ARCHIVE="chatroom.zip">
+					<param name=TITLE value="Instant Message">
+					<param name=BACKCOLOR value=#000000>
+					<param name=TEXTCOLOR value=#3300ff>
+					<param name=TITLEBACKCOLOR value=#660000>
+					<param name=TITLETEXTCOLOR value=7cfc00>
+					<param name=NOUNID value=1038>
+				</applet>
+			</div>
+			<script language=JavaScript>
+				<!--
+
+				//Disable right click script III- By Renigade (renigade@mediaone.net)
+				//For full source code, visit http://www.dynamicdrive.com
+
+				var message = "alert('If you need to see HTML e-mail me.')";
+				///////////////////////////////////
+				function clickIE() {
+					if (document.all) {
+						(message);
+						return false;
+					}
+				}
+
+				function clickNS(e) {
+					if (document.layers || (document.getElementById && !document.all)) {
+						if (e.which == 2 || e.which == 3) {
+							(message);
+							return false;
+						}
+					}
+				}
+				if (document.layers) {
+					document.captureEvents(Event.MOUSEDOWN);
+					document.onmousedown = clickNS;
+				} else {
+					document.onmouseup = clickNS;
+					document.oncontextmenu = clickIE;
+				}
+
+				document.oncontextmenu = new Function("return false")
+				// -->
+			</script>
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+<html>
+
+	<head>
+		<title>Snowboarding</title>
+	</head>
+
+	<body>
+		<div style="position:absolute; top:0; left:0">
+			<table border="0" cellpadding="0" cellspacing="0" width="452">
+				<tr>
+					<td><img src="http://www.angelfire.com/doc/arcade/sbtop.gif" width="452" height="6"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="452">
+				<tr>
+					<td><img src="http://www.angelfire.com/doc/arcade/sbleft.gif" width="6" height="340"></td>
+					<td><embed src="http://www.angelfire.com/doc/arcade/snowboard.dcr" width="440" height="340"></td>
+					<td><img src="http://www.angelfire.com/doc/arcade/sbright.gif" width="6" height="340"></td>
+				</tr>
+			</table>
+			<table border="0" cellpadding="0" cellspacing="0" width="452">
+				<tr>
+					<td><img src="http://www.angelfire.com/doc/arcade/sbbottom.gif" width="452" height="6"></td>
+				</tr>
+			</table>
+			<br>
+			<table border="0" cellpadding="5" cellspacing="0" width="452">
+				<tr>
+					<td>
+						<center>
+							<img src="http://www.angelfire.com/doc/arcade/snowboardkeys.gif" width="225" height="68" alt="trick keymap"></center>
+					</td>
+					<td valign="top">
+						<font face="ARIAL,HELVETICA" size="1">- dude FOLLOWS
+							cursor (mouse)<br>
+							- board grab = space bar 2x (6 pts)<br>
+							- spin = A key 5x (9 pts)<br>
+							- flip = Z key 5x (9 pts)<br>
+							- YOU MUST do a trick to land! </font>
+					</td>
+				</tr>
+			</table>
+			<font color="50:0:100" size="3">
+				<center><B>USE THE MOUSE TO MOVE!!!</b></center>
+			</FONT>
+			<Br>
+			<center><a href="javascript:window.close()" onmouseover="window.status='Close This Window';return true" onclick="window.status='Close This Window';return true" onmouseout="window.status='';return true">
+					<font face="verdana">Close Window</font>
+				</a>
+		</div>
+		<script language="JavaScript">
+			<!--
+
+			//Disable right click script III- By Renigade (renigade@mediaone.net)
+			//For full source code, visit http://www.dynamicdrive.com
+
+			var message = "alert('If you need to see HTML e-mail me.')";
+			///////////////////////////////////
+			function clickIE() {
+				if (document.all) {
+					(message);
+					return false;
+				}
+			}
+
+			function clickNS(e) {
+				if (document.layers || (document.getElementById && !document.all)) {
+					if (e.which == 2 || e.which == 3) {
+						(message);
+						return false;
+					}
+				}
+			}
+			if (document.layers) {
+				document.captureEvents(Event.MOUSEDOWN);
+				document.onmousedown = clickNS;
+			} else {
+				document.onmouseup = clickNS;
+				document.oncontextmenu = clickIE;
+			}
+
+			document.oncontextmenu = new Function("return false")
+			// -->
+		</script>
+	</body>
+
+</html>
